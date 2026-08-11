@@ -1,16 +1,93 @@
-# React + Vite
+# 📱 Gerador de QR Code
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação web desenvolvida em **React** para geração de QR Codes a partir de textos ou URLs.
 
-Currently, two official plugins are available:
+O projeto possui uma interface simples e responsiva, permitindo gerar o QR Code, visualizá-lo em um popup e realizar o download da imagem em formato PNG.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Funcionalidades
 
-## React Compiler
+* ✨ Geração de QR Code a partir de texto ou URL
+* 🔔 Mensagem de confirmação após a geração
+* 🖼️ Visualização do QR Code diretamente na página
+* 📦 Popup para visualização antes do download
+* 💾 Download do QR Code em formato PNG
+* 🎨 Interface personalizada com CSS
+* ✨ Animações de abertura e fechamento do popup
+* 📱 Layout adaptável para diferentes tamanhos de tela
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tecnologias utilizadas
 
-## Expanding the ESLint configuration
+* **React**
+* **JavaScript**
+* **HTML**
+* **CSS**
+* **Vite**
+* **qrcode.react**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📦 Instalação
+
+Clone o repositório:
+
+```bash
+git clone URL_DO_SEU_REPOSITORIO
+```
+
+Entre na pasta:
+
+```bash
+cd nome-do-projeto
+```
+
+Instale as dependências:
+
+```bash
+npm install
+```
+
+Inicie o projeto:
+
+```bash
+npm run dev
+```
+
+Depois, acesse o endereço mostrado pelo Vite no terminal, normalmente:
+
+```text
+http://localhost:5173
+```
+
+## 📸 Como utilizar
+
+1. Digite uma URL ou qualquer texto no campo.
+2. Clique em **Gerar QR Code**.
+3. O QR Code será exibido na página.
+4. Clique em **Baixar QR Code**.
+5. Um popup será aberto para visualização.
+6. Clique em **Baixar PNG** para salvar o QR Code.
+
+## 📁 Estrutura principal
+
+```text
+src/
+├── App.jsx
+├── App.css
+└── main.jsx
+```
+
+## 🎯 Objetivo do projeto
+
+Este projeto foi desenvolvido como uma aplicação prática para exercitar conceitos de desenvolvimento frontend utilizando React, incluindo:
+
+* gerenciamento de estado com `useState`
+* eventos e interação com o usuário
+* renderização condicional
+* componentes React
+* manipulação de elementos Canvas
+* estilização com CSS
+* criação de uma interface interativa
+
+## 👨‍💻 Autor
+
+**Marco Boiane**
+
+Projeto desenvolvido para estudos e prática de desenvolvimento web com React.
