@@ -1,0 +1,191 @@
+.poupup {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 1000;
+}
+
+.poupup-conteudo {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+
+  animation: aparecer 0.4s ease-out;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.poupup.fechando .poupup-conteudo {
+  animation: desaparecer 0.3s ease-in forwards;
+}
+
+@keyframes desaparecer {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+}
+
+.poupup-conteudo button {
+  width: 200px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.poupup-conteudo button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.poupup-conteudo button:active {
+  transform: translateY(0);
+}
+
+.botao-download {
+  background: #222;
+  color: white;
+}
+
+.botao-fechar {
+  background: #e5e5e5;
+  color: #ce1111;
+}
+
+.poupup-conteudo canvas {
+  padding: 12px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+.poupup-conteudo h2 {
+  margin: 0 0 5px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #222;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #222;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#root > div {
+  width: 100%;
+  max-width: 500px;
+  padding: 40px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#root > div {
+  gap: 18px;
+}
+
+#root > div h1 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+#root > div > p {
+  margin: 0;
+}
+
+#root > div input {
+  width: 300px;
+  padding: 12px 15px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+#root > div input:focus {
+  border-color: #222;
+}
+
+#root > div > button {
+  width: 200px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #222;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
+  margin: 15px;
+}
+
+#root > div > button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+#root > div > button:active {
+  transform: translateY(0);
+}
+
+#root > div h1 {
+  font-size: 32px;
+  margin: 0 0 10px;
+  color: #222;
+  letter-spacing: -0.5px;
+}
+
+#root > div > p:first-of-type {
+  font-size: 17px;
+  color: #666;
+  margin: 0 0 25px;
+}
+
+#root > div > p:nth-of-type(2) {
+  font-size: 14px;
+  color: #888;
+  margin: 15px 0;
+}
